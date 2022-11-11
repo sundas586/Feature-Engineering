@@ -33,6 +33,9 @@ So an example of a linear model relating a feature variables x1, variables x1 an
 we can actually transform each one of these parameters to ensure a linear relationship. 
 **i.e log transformations can be a useful way to find a linear relationship when the underlying raw data may not actually have a linear relationship.**
 
+<i>Tip</i>---> why data is needed to be normally distributed ?
+Ans : We convert normal distributions into the standard normal distribution for several reasons: To find the probability of observations in a distribution falling above or below a given value. To find the probability that a sample mean significantly differs from a known population mean.
+
 ### Feature Transformation (Transformation of distribution of data / to make linear relationship between features)
 
 For linear regression, we assue that our residuals are normally distributed. But often raw data and target predicted feature is skewed,
