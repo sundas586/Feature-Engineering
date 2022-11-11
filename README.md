@@ -57,13 +57,17 @@ we can estimate higher-order relationships in this data by adding **polynomial f
 So instead of only incorporating budget, we can incorporate budget squared as a feature and add more flexibility to our model and fit a linear model using these polynomial features. 
 
 So just rather than straight, it kind of curves off. Then you would have something like x squared raising the degree to two.
-Play video starting at :3:9 and follow transcript3:09
-We can even continue to extend this to three, or four, or any higher-order polynomial.
-Play video starting at :3:15 and follow transcript3:15
-Again, we're changing our features, but maintaining a linear model
+Play video starting at and follow transcript
 
 ![b](https://user-images.githubusercontent.com/33677647/201421762-cb338716-5be8-4305-8d6c-e119749f37f1.JPG)
 
+We can even continue to extend this to three, or four, or any higher-order polynomial.
+Again, we're changing our features, but maintaining a linear model
+
+
+
+
+And what we see in the graph would represent not just diminishing returns, but now we have two inflection points, right? It curves up, then it curves down. And that would be the idea that after some time not only is there diminishing returns, but a higher budget may lead to less box office sales at a certain threshold.
  
  
 
