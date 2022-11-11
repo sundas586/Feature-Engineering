@@ -31,10 +31,12 @@ some of its examples are
 So an example of a linear model relating a feature variables x1, variables x1 and x2 with a target label variable y, is what we see here. The function of x equals beta naught, some intercepts, plus some coefficient beta 1 times x1 plus another coefficient beta 2 plus x2. And here beta, beta naught, beta 1, beta 2 are going to be the parameters that we will hopefully learn with our model. An example that you can think of is, what we'll use also in the later graphs, is box office returns. And you can think of x1 as the cast budget and x2 as the marketing budget. And then beta 1 and beta 2 determining how much the cast budget and the marketing budget will actually help in predicting what the revenue will be for that movie.
  
 we can actually transform each one of these parameters to ensure a linear relationship. 
+**i.e log transformations can be a useful way to find a linear relationship when the underlying raw data may not actually have a linear relationship.**
 
-### Feature Transformation (Transformation of distribution of data)
+### Feature Transformation (Transformation of distribution of data / to make linear relationship between features)
 
-For linear regression, we assue that our residuals are normally distributed. But often raw data and target predicted feature is skewwed
+For linear regression, we assue that our residuals are normally distributed. But often raw data and target predicted feature is skewed,
+log transformations can be a useful way to find a linear relationship when the underlying raw data may not actually have a linear relationship.
  
 ![a](https://user-images.githubusercontent.com/33677647/201408901-9f0fec30-949b-4479-8d5b-57ee6216564e.JPG)
 
@@ -43,6 +45,9 @@ some libraries to transfom data :
 [I used log to transform data in this Lab](https://github.com/sundas586/Data_Cleaning/blob/main/DataCleaning_IBM_DataScience.py)
 - **boxcox** is just a more complex way to find the ideal way to transform from a skewed data set to a normal distribution
   
+![a](https://user-images.githubusercontent.com/33677647/201416157-c261e892-7fd3-4261-b267-b4d29d4a1c32.JPG)
+
+
 
  
  
