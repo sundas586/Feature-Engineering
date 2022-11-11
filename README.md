@@ -36,10 +36,7 @@ we can actually transform each one of these parameters to ensure a linear relati
 
 For linear regression, we assue that our residuals are normally distributed. But often raw data and target predicted feature is skewwed
  
-![a](https://user-images.githubusercontent.com/33677647/201408617-a4074637-f2f0-4414-92fa-19a59bef1169.JPG)
+![a](https://user-images.githubusercontent.com/33677647/201408901-9f0fec30-949b-4479-8d5b-57ee6216564e.JPG)
 
- 
- 
- 
  
  
