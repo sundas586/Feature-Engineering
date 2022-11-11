@@ -49,10 +49,23 @@ some libraries to transfom data :
 
 Such as a larger box office probably will not have a linear relationship with the budget, but rather it would have diminishing returns. So larger the budget, after some time, you probably won't get as much return on your box office. So that isn't a linear relationship, but it may be linear with the relationship of log(x).
 
-![a](https://user-images.githubusercontent.com/33677647/201417184-e0aab06c-7c17-40df-87c0-b112ddd31ef8.JPG
+![a](https://user-images.githubusercontent.com/33677647/201421729-e54c1e7a-6667-4fc3-8efe-c8f0ee97115b.JPG)
 
 (Means box office and budget had no linear/ positive or negitive co-linearity together but we applied log function to transform the distribution, and now they have a relation togetther by which we understand that higher budget will not increase population on box office by some time).
 
+we can estimate higher-order relationships in this data by adding **polynomial features**.
+So instead of only incorporating budget, we can incorporate budget squared as a feature and add more flexibility to our model and fit a linear model using these polynomial features. 
+
+So just rather than straight, it kind of curves off. Then you would have something like x squared raising the degree to two.
+Play video starting at :3:9 and follow transcript3:09
+We can even continue to extend this to three, or four, or any higher-order polynomial.
+Play video starting at :3:15 and follow transcript3:15
+Again, we're changing our features, but maintaining a linear model
+
+![b](https://user-images.githubusercontent.com/33677647/201421762-cb338716-5be8-4305-8d6c-e119749f37f1.JPG)
+
+ 
+ 
 
 
 
