@@ -26,7 +26,7 @@ some of its examples are
 
 ![a](https://user-images.githubusercontent.com/33677647/201405617-ec201038-2140-4521-b289-e39ef17b9207.JPG)
 
-### Check Linear Relation if intended 
+## 1_Check Linear Relation if intended 
 
 So an example of a linear model relating a feature variables x1, variables x1 and x2 with a target label variable y, is what we see here. The function of x equals beta naught, some intercepts, plus some coefficient beta 1 times x1 plus another coefficient beta 2 plus x2. And here beta, beta naught, beta 1, beta 2 are going to be the parameters that we will hopefully learn with our model. An example that you can think of is, what we'll use also in the later graphs, is box office returns. And you can think of x1 as the cast budget and x2 as the marketing budget. And then beta 1 and beta 2 determining how much the cast budget and the marketing budget will actually help in predicting what the revenue will be for that movie.
  
@@ -77,6 +77,31 @@ And what we see in the graph would represent not just diminishing returns, but n
  (What I am getting here is that when we transform the data to a higher order, it is revealed that this data is telling us that after a certain time, not only the box office will get less customers but even a huge decline will becaused even after high budgets )
  
 ![e](https://user-images.githubusercontent.com/33677647/201441909-66b9019b-2672-4c9d-8e50-0a684618947e.JPG)
+
+
+## 2_Feature Encoding
+
+Encoding, converting non-numeric features such as categorical or ordinal features to numeric features.
+
+- Nominal data : values with no order, such as red/blue/green, married/ unmarried, true/ false.
+- Ordinal data : values with order, such as high/medium/low, cold/warm/hot.
+
+In case of nominal data, If we have only two values i.e male/ female, pass/fail, married/unmarried, then we can do **binary encoding** i.e directly replace them by 1,0.
+But if we have multiple values we do **One-Hot Encoding**. Which creates a new column for eac value, so we have several new columns.(I personally prefer getdummies then one hot encoding).
+
+In case of Ordinal data, if w have 3 values, good/better/best, or low/average/high, we can simply replace the by 1/2/3.
+
+## Feature Scaling
+
+Adjusting of variables scale to allow comparison of variables with different scales.  
+
+Tip--->In linear algebra, I studied it as "Changing of basis", means if one person is using some units, and you are using different units for same work, then you convert your units to that persons units to understand his work as well.
+
+For plots I take it as if column-1 has data in mm and column-2 has data in Km then we convert column one data from mm to km so that the plotting can be correct, and the results
+
+Different continuous features will often have different scales in a real-world data. 
+
+![ad](https://user-images.githubusercontent.com/33677647/201444355-fb93cbaf-8445-449c-95df-07d9b5ca2c23.JPG)
 
 
 
