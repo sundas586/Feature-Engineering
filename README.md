@@ -47,6 +47,13 @@ some libraries to transfom data :
   
 ![a](https://user-images.githubusercontent.com/33677647/201416157-c261e892-7fd3-4261-b267-b4d29d4a1c32.JPG)
 
+Such as a larger box office probably will not have a linear relationship with the budget, but rather it would have diminishing returns. So larger the budget, after some time, you probably won't get as much return on your box office. So that isn't a linear relationship, but it may be linear with the relationship of log(x).
+
+![a](https://user-images.githubusercontent.com/33677647/201417184-e0aab06c-7c17-40df-87c0-b112ddd31ef8.JPG
+
+(Means box office and budget had no linear/ positive or negitive co-linearity together but we applied log function to transform the distribution, and now they have a relation togetther by which we understand that higher budget will not increase population on box office by some time).
+
+
 
 
  
