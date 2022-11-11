@@ -34,7 +34,7 @@ we can actually transform each one of these parameters to ensure a linear relati
 **i.e log transformations can be a useful way to find a linear relationship when the underlying raw data may not actually have a linear relationship.**
 
 <i><b>Tip</b></i>---> why data is needed to be normally distributed ?
-Ans : We convert normal distributions into the standard normal distribution for several reasons: To find the probability of observations in a distribution falling above or below a given value. To find the probability that a sample mean significantly differs from a known population mean.
+Ans : We convert normal distributions into the standard normal distribution for several reasons: To find the probability of observations in a distribution falling above or below a given value. To find the probability that a sample mean significantly differs from a known population mean.(As far as I understand it is that we compare the mean of population to mean of sample to see the accuracy of our sample)
 
 ### Feature Transformation (Transformation of distribution of data / to make linear relationship between features)
 
@@ -46,7 +46,8 @@ log transformations can be a useful way to find a linear relationship when the u
 some libraries to transfom data :
 - **log and log1p** from NumPy. log1p is just going to be log, except you add one because you can't take the log of zero, so in case you have zero in your data set. 
 [I used log to transform data in this Lab](https://github.com/sundas586/Data_Cleaning/blob/main/DataCleaning_IBM_DataScience.py)
-- **boxcox** is just a more complex way to find the ideal way to transform from a skewed data set to a normal distribution
+- **boxcox** is just a more complex way to find the ideal way to transform from a skewed data set to a normal distribution.
+-  freom sklearn.preprocessing import **polynomial Features**
   
 ![a](https://user-images.githubusercontent.com/33677647/201416157-c261e892-7fd3-4261-b267-b4d29d4a1c32.JPG)
 
@@ -67,12 +68,16 @@ Play video starting at and follow transcript
 We can even continue to extend this to three, or four, or any higher-order polynomial.
 Again, we're changing our features, but maintaining a linear model
 
-
-
+![c](https://user-images.githubusercontent.com/33677647/201441243-59c93a41-c49e-4f06-8372-7dffc7ec9075.JPG)
 
 And what we see in the graph would represent not just diminishing returns, but now we have two inflection points, right? It curves up, then it curves down. And that would be the idea that after some time not only is there diminishing returns, but a higher budget may lead to less box office sales at a certain threshold.
  
+ ![d](https://user-images.githubusercontent.com/33677647/201441281-0bf7c464-5e44-4e26-ba37-26a0b3d4f0f1.JPG)
  
+ (What I am getting here is that when we transform the data to a higher order, it is revealed that this data is telling us that after a certain time, not only the box office will get less customers but even a huge decline will becaused even after high budgets )
+ 
+![e](https://user-images.githubusercontent.com/33677647/201441909-66b9019b-2672-4c9d-8e50-0a684618947e.JPG)
+
 
 
 
