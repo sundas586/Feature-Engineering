@@ -103,6 +103,24 @@ Different continuous features will often have different scales in a real-world d
 
 ![ad](https://user-images.githubusercontent.com/33677647/201444355-fb93cbaf-8445-449c-95df-07d9b5ca2c23.JPG)
 
+Normalization means the area of plot equals 1, but scaling just to get all the columns on single/same unit, it deletes the mean from the data, and now our mean equals zero! and rest is also the data - mean.
+
+![a](https://user-images.githubusercontent.com/33677647/201444888-1cfe1d5a-d8ba-4668-9032-78be90109524.JPG)
+![b](https://user-images.githubusercontent.com/33677647/201444896-f99c8763-fb87-449b-a791-4a20f10b5cb9.JPG)
+
+==========================================================================================
+
+![c](https://user-images.githubusercontent.com/33677647/201444908-0a290e29-50f9-4ae7-85de-82f3b82e9601.JPG)
+![d](https://user-images.githubusercontent.com/33677647/201444914-84fcbb4e-d0d2-4dfd-af9b-a8d2cf1dc605.JPG)
+
+==========================================================================================
+
+![e](https://user-images.githubusercontent.com/33677647/201444954-f75f7c2f-bfa8-4ce5-984a-ae9fadd14fab.JPG)
+![f](https://user-images.githubusercontent.com/33677647/201444962-8886b03f-b4c8-4afd-87df-9668d6f5cafd.JPG)
+
+
+
+
 
 
 
