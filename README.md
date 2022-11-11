@@ -38,5 +38,11 @@ For linear regression, we assue that our residuals are normally distributed. But
  
 ![a](https://user-images.githubusercontent.com/33677647/201408901-9f0fec30-949b-4479-8d5b-57ee6216564e.JPG)
 
+some libraries to transfom data :
+- **log and log1p** from NumPy. log1p is just going to be log, except you add one because you can't take the log of zero, so in case you have zero in your data set. 
+[I used log to transform data in this Lab](https://github.com/sundas586/Data_Cleaning/blob/main/DataCleaning_IBM_DataScience.py)
+- **boxcox** is just a more complex way to find the ideal way to transform from a skewed data set to a normal distribution
+  
+
  
  
