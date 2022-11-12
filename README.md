@@ -12,7 +12,9 @@ We do feature engineering before the data is put in machine learning model
 [Data Cleaning](https://towardsdatascience.com/what-is-feature-engineering-importance-tools-and-techniques-for-machine-learning-2080b0269f10)<br/>
 [Kaggle data cleaning course and codes](https://www.kaggle.com/learn/data-cleaning)<br />
 [IBM_DataCleaning_Lab](https://www.coursera.org/learn/ibm-exploratory-data-analysis-for-machine-learning/ungradedLti/qfAqI/practice-lab-data-cleaning)
-![dataCleaning2](https://user-images.githubusercontent.com/33677647/201374239-ca5f3c23-ae74-4275-b413-6bf760090caf.jpg)
+
+ 
+ ![dataCleaning2](https://user-images.githubusercontent.com/33677647/201374239-ca5f3c23-ae74-4275-b413-6bf760090caf.jpg)
 
 
 You might perform feature engineering to:
@@ -40,10 +42,14 @@ some of its examples are
 
 For a feature(column) to be useful, it must have a relationship to the target variable. So that our model can learn something from that variable in predicting the target variable, When using a linear model, we have to keep in mind that our goal is to transform the features (transform the features in a way) to make their relationship to the target linear. 
 
-So an example of a linear model relating a feature variables x1, variables x1 and x2 with a target label variable y, is what we see here. The function of x equals beta naught, some intercepts, plus some coefficient beta 1 times x1 plus another coefficient beta 2 plus x2. And here beta, beta naught, beta 1, beta 2 are going to be the parameters that we will hopefully learn with our model. An example that you can think of is, what we'll use also in the later graphs, is box office returns. And you can think of x1 as the cast budget and x2 as the marketing budget. And then beta 1 and beta 2 determining how much the cast budget and the marketing budget will actually help in predicting what the revenue will be for that movie.
- 
-we can actually transform each one of these parameters to ensure a linear relationship. 
+ we can actually transform features to ensure a linear relationship. 
 **i.e log transformations can be a useful way to find a linear relationship when the underlying raw data may not actually have a linear relationship.**
+ 
+![a](https://user-images.githubusercontent.com/33677647/201498317-c70596f7-9725-4266-bc4a-0ce3b48c36bf.JPG)
+
+So we create a new feature in dataset by squaring the feature lenght i.e Area = L*L, So area feature is a higher degree polynomial of lenght feature, which is now fitting the plot well.
+
+ ![b](https://user-images.githubusercontent.com/33677647/201498318-d6c7363f-6593-4e3f-bbbe-9b5b707b9d92.JPG)
 
 <i><b>Tip</b></i>---> why data is needed to be normally distributed ?
 Ans : We convert normal distributions into the standard normal distribution for several reasons: To find the probability of observations in a distribution falling above or below a given value. To find the probability that a sample mean significantly differs from a known population mean.(As far as I understand it is that we compare the mean of population to mean of sample to see the accuracy of our sample)
@@ -67,6 +73,8 @@ Such as a larger box office probably will not have a linear relationship with th
 
 ![a](https://user-images.githubusercontent.com/33677647/201421729-e54c1e7a-6667-4fc3-8efe-c8f0ee97115b.JPG)
 
+![Capture](https://user-images.githubusercontent.com/33677647/201498167-45c9bc6b-e745-4e73-b6ee-efbd42094d29.JPG) 
+ 
 (Means box office and budget had no linear/ positive or negitive co-linearity together but we applied log function to transform the distribution, and now they have a relation togetther by which we understand that higher budget will not increase population on box office by some time).
 
 we can estimate higher-order relationships in this data by adding **polynomial features**.
