@@ -1,33 +1,44 @@
 # Feature Engineering
 
-<h4>Learn the steps and principles of creating better features.<h4></br>
+<h4>Learn the steps and principles of creating better features for a ML model<h4></br>
 <h4> A process of extracting useful features from raw data using Maths, Statisics, Domain knowledge.</h4>
 
 Feature engineering helps in data cleaning,
 We do feature engineering before the data is put in machine learning model
+
 
 [Feature Engineering Kaggle](https://www.kaggle.com/code/ryanholbrook/what-is-feature-engineering)<br/>
 [EDA, Step by step](https://www.simplilearn.com/tutorials/data-analytics-tutorial/exploratory-data-analysis)<br/>
 [Data Cleaning](https://towardsdatascience.com/what-is-feature-engineering-importance-tools-and-techniques-for-machine-learning-2080b0269f10)<br/>
 [Kaggle data cleaning course and codes](https://www.kaggle.com/learn/data-cleaning)<br />
 [IBM_DataCleaning_Lab](https://www.coursera.org/learn/ibm-exploratory-data-analysis-for-machine-learning/ungradedLti/qfAqI/practice-lab-data-cleaning)
-
-
 ![dataCleaning2](https://user-images.githubusercontent.com/33677647/201374239-ca5f3c23-ae74-4275-b413-6bf760090caf.jpg)
+
+
+You might perform feature engineering to:
+- improve a model's predictive performance
+- reduce computational or data needs
+- improve interpretability of the results
 
 some of its examples are
 
+- Check which are most important features.
 - Outlier detection
 - Imputation = the process of replacing missing data with substituted values.  Handling missing values
-- Feature encoding (One hot encoding) 
-- Feature creation = Two features as one, saves time, memory, Price and sq.ft --> price/sq.ft
+- Feature encoding (One hot encoding/ Target encoding) 
+- New Feature creation = Two features as one using domain knowledge, it saves time/ memory, Price and sq.ft --> price/sq.ft
 - Feature transformation
 - Feature Scaling
-- Check (If we intend to use linear regression as our model, then we need to check if there is linear relation btw. our features or not).
+- Segmentation features creation with k-means clustering.
+- Principal component analysis = decompose a dataset's variation into features with PCA
+- Check (If we intend to use linear regression as our model, then we need to check if there is linear relation btw. our features or not, is data normalized).
+
 
 ![a](https://user-images.githubusercontent.com/33677647/201405617-ec201038-2140-4521-b289-e39ef17b9207.JPG)
 
 ## 1_Check Linear Relation if intended 
+
+For a feature(column) to be useful, it must have a relationship to the target variable. So that our model can learn something from that variable in predicting the target variable, When using a linear model, we have to keep in mind that our goal is to transform the features (transform the features in a way) to make their relationship to the target linear. 
 
 So an example of a linear model relating a feature variables x1, variables x1 and x2 with a target label variable y, is what we see here. The function of x equals beta naught, some intercepts, plus some coefficient beta 1 times x1 plus another coefficient beta 2 plus x2. And here beta, beta naught, beta 1, beta 2 are going to be the parameters that we will hopefully learn with our model. An example that you can think of is, what we'll use also in the later graphs, is box office returns. And you can think of x1 as the cast budget and x2 as the marketing budget. And then beta 1 and beta 2 determining how much the cast budget and the marketing budget will actually help in predicting what the revenue will be for that movie.
  
