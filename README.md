@@ -141,6 +141,9 @@ Normalization means the area of plot equals 1, but scaling just to get all the c
 
 ## 4_Mutual Information 
 
+[MI_Kaggle](https://www.kaggle.com/code/ryanholbrook/mutual-information)
+[MI_Towards_DataScience](https://towardsdatascience.com/select-features-for-machine-learning-model-with-mutual-information-534fe387d5c8)
+
 **What is mutual information (MI) in feature selection?**
 Between two random variables, one taken from any feature and one taken from target feature, there is a non-negative value, which measures the dependency between the variables. It is equal to zero if and only if two random variables are totally independent of each other, and higher values mean higher dependency.
 
@@ -150,9 +153,19 @@ MI is widely used in machine learning to measure dependency among different feat
  
  ![Capture](https://user-images.githubusercontent.com/33677647/201500523-32caed17-1523-451d-a639-12a6ea9b0125.JPG)
 
-
 Here's an example from the Ames Housing data. The figure shows the relationship between the exterior quality of a house and the price it sold for. Each point represents a house.
 
+![Capture](https://user-images.githubusercontent.com/33677647/201501255-926d8936-56ec-46f1-ad80-b6eb80f54ea0.JPG)
+
+So the feature "exterior quality" decreased the uncertinity for price feature.
+
+Here uncertainty  known as **"entropy"**. The entropy of a variable means roughly: "how many yes-or-no questions you would need to describe an occurance of that target variable, on average." The more questions you have to ask, the more uncertain you must be about the variable.
+
+Where as **Mutual information** is how many questions you expect the  from the "exterior quality" feature to answer about the target feature.
+
+The more the MI the less the entropy.
+
+The more the MI (stronge rel. btw both features, so to get most info from "exterior quality" about target) the less the entropy (uncertinity about what will be the target result).
 
 
 
