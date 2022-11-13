@@ -66,8 +66,10 @@ some libraries to transfom data :
 - **log and log1p** from NumPy. log1p is just going to be log, except you add one because you can't take the log of zero, so in case you have zero in your data set. 
 [I used log to transform data in this Lab](https://github.com/sundas586/Data_Cleaning/blob/main/DataCleaning_IBM_DataScience.py)
 - **boxcox** is just a more complex way to find the ideal way to transform from a skewed data set to a normal distribution.
--  freom sklearn.preprocessing import **polynomial Features**
-  
+- from sklearn.preprocessing import **polynomial Features**
+
+![log1p](https://user-images.githubusercontent.com/33677647/201547702-7d0e1967-243f-4940-b0e0-01461186d447.JPG)
+
 ![a](https://user-images.githubusercontent.com/33677647/201416157-c261e892-7fd3-4261-b267-b4d29d4a1c32.JPG)
 
 Such as a larger box office probably will not have a linear relationship with the budget, but rather it would have diminishing returns. So larger the budget, after some time, you probably won't get as much return on your box office. So that isn't a linear relationship, but it may be linear with the relationship of log(x).
