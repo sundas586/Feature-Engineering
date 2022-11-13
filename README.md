@@ -167,6 +167,14 @@ The more the MI the less the entropy.
 
 The more the MI (stronge rel. btw both features, so to get most info from "exterior quality" about target) the less the entropy (uncertinity about what will be the target result).
 
+The least possible mutual information between quantities is 0.0. When MI is zero, the quantities are independent: neither can tell you anything about the other. 
+utual information is a logarithmic quantity, so it increases very slowly.)
+
+The next figure will give you an idea of how MI values correspond to the kind and degree of association a feature has with the target.
+ 
+ ![Capture](https://user-images.githubusercontent.com/33677647/201501707-3a1efe59-70d7-4807-b7c2-2bc17c243dcd.JPG)
+![Capture2](https://user-images.githubusercontent.com/33677647/201501708-61923b6c-bae6-49d8-ad68-d5ea5954d6e4.JPG)
+
 
 
 
