@@ -177,6 +177,10 @@ The next figure will give you an idea of how MI values correspond to the kind an
  ![Capture](https://user-images.githubusercontent.com/33677647/201501707-3a1efe59-70d7-4807-b7c2-2bc17c243dcd.JPG)
 ![Capture2](https://user-images.githubusercontent.com/33677647/201501708-61923b6c-bae6-49d8-ad68-d5ea5954d6e4.JPG)
 
+![a](https://user-images.githubusercontent.com/33677647/201547514-5535a16f-4ef0-48fd-a8dc-f5a2ed4efef1.JPG)
+![b](https://user-images.githubusercontent.com/33677647/201547516-015fee08-92d0-4705-8925-139d740953b5.JPG)
+
+
 
 
 
