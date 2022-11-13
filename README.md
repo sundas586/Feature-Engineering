@@ -151,7 +151,9 @@ MI is widely used in machine learning to measure dependency among different feat
 
  If you knew the value of a feature, how much more confident would you be about the target?
  
- ![Capture](https://user-images.githubusercontent.com/33677647/201500523-32caed17-1523-451d-a639-12a6ea9b0125.JPG)
+![Capture](https://user-images.githubusercontent.com/33677647/201500523-32caed17-1523-451d-a639-12a6ea9b0125.JPG)
+![a](https://user-images.githubusercontent.com/33677647/201546277-652a5a56-0eb0-407c-a57b-83712423ae92.JPG)
+![b](https://user-images.githubusercontent.com/33677647/201546279-d9a79a05-f525-4bf1-8de0-fc74997fcbc7.JPG)
 
 Here's an example from the Ames Housing data. The figure shows the relationship between the exterior quality of a house and the price it sold for. Each point represents a house.
 
