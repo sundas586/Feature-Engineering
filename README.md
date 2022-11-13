@@ -34,6 +34,7 @@ some of its examples are
 - Segmentation features creation with k-means clustering.
 - Principal component analysis = decompose a dataset's variation into features with PCA
 - Check (If we intend to use linear regression as our model, then we need to check if there is linear relation btw. our features or not, is data normalized).
+- Mutual Information 
 
 
 ![a](https://user-images.githubusercontent.com/33677647/201405617-ec201038-2140-4521-b289-e39ef17b9207.JPG)
@@ -111,7 +112,7 @@ But if we have multiple values we do **One-Hot Encoding**. Which creates a new c
 
 In case of Ordinal data, if w have 3 values, good/better/best, or low/average/high, we can simply replace the by 1/2/3.
 
-## Feature Scaling
+## 3_Feature Scaling
 
 Adjusting of variables scale to allow comparison of variables with different scales.  
 
@@ -137,6 +138,20 @@ Normalization means the area of plot equals 1, but scaling just to get all the c
 
 ![e](https://user-images.githubusercontent.com/33677647/201444954-f75f7c2f-bfa8-4ce5-984a-ae9fadd14fab.JPG)
 ![f](https://user-images.githubusercontent.com/33677647/201444962-8886b03f-b4c8-4afd-87df-9668d6f5cafd.JPG)
+
+## 4_Mutual Information 
+
+**What is mutual information (MI) in feature selection?**
+Between two random variables, one taken from any feature and one taken from target feature, there is a non-negative value, which measures the dependency between the variables. It is equal to zero if and only if two random variables are totally independent of each other, and higher values mean higher dependency.
+
+MI is widely used in machine learning to measure dependency among different features in data.
+
+ If you knew the value of a feature, how much more confident would you be about the target?
+ 
+ ![Capture](https://user-images.githubusercontent.com/33677647/201500523-32caed17-1523-451d-a639-12a6ea9b0125.JPG)
+
+
+Here's an example from the Ames Housing data. The figure shows the relationship between the exterior quality of a house and the price it sold for. Each point represents a house.
 
 
 
