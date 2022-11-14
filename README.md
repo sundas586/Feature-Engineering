@@ -228,7 +228,10 @@ These are now the final clusters
  
 ![a](https://user-images.githubusercontent.com/33677647/201715634-89c1e948-4f5b-4240-9c66-1b8bd73deff1.JPG)
 
-Now the problem is that how to select the correct k, because in real life there are many features, and its difficult to visualize them on a scatter plot 
+**QUESTION** : Now the problem is that how to select the correct k, because in real life there are many features, and its difficult to visualize them on a scatter plot.<br/>
+ 
+ **ANSWER** : "ALGO METHOD" is a method to select the correct number of K for clustering.
+ 
  
  
  
