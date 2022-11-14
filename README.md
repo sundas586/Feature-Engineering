@@ -183,8 +183,11 @@ The next figure will give you an idea of how MI values correspond to the kind an
 ![b](https://user-images.githubusercontent.com/33677647/201547516-015fee08-92d0-4705-8925-139d740953b5.JPG)
 
 ## 5_ K-Means Clustering
-
-In un-supervised machine learning, we do not have target variable, and in order to understand the underline structure of our data set, we divide data into clusters to make predictions out of it.
+ 
+Unsupervised algorithms don't make use of a target, instead their purpose is to learn some property of the data, and in order to understand the underline structure of our data set, we divide data into clusters to make predictions out of it.<br/>
+Clustering simply means the assigning of data points to groups based upon how similar the points are to each other 
+ 
+ 
 
 ![a](https://user-images.githubusercontent.com/33677647/201707914-a00f13a0-7cdd-445c-8563-e5b6ed13e04a.JPG)
 
@@ -256,6 +259,12 @@ The point where we see our Elbow is our choozen **K**
  
 ![a](https://user-images.githubusercontent.com/33677647/201735535-14fcd946-df09-41d6-9273-c426432afe2c.JPG)
 ![b](https://user-images.githubusercontent.com/33677647/201735559-c80c1414-e9e6-4bd5-9cc7-bd299dbfc2f3.JPG)
+ 
+ 
+You could imagine each centroid capturing points through a sequence of radiating circles. When sets of circles from competing centroids overlap they form a line. The result is what's called a **Voronoi tessallation**. The tessallation shows you to what clusters future data will be assigned; the tessallation is essentially what k-means learns from its training data. 
+
+![tBkCqXJ](https://user-images.githubusercontent.com/33677647/201751403-4e7f3f70-76d1-44fd-9e00-40da1bb4a289.gif)
+ 
 
  
  
