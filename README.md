@@ -254,9 +254,9 @@ After getting the final SSE. we plot a graph of SSE<br/>
 In that graph we find **Elbow Point** in our graph, similar to elbow point of best fiited line in regression analysis.<br/>
 The point where we see our Elbow is our choozen **K**
  
- 
- 
- 
+![a](https://user-images.githubusercontent.com/33677647/201735535-14fcd946-df09-41d6-9273-c426432afe2c.JPG)
+![b](https://user-images.githubusercontent.com/33677647/201735559-c80c1414-e9e6-4bd5-9cc7-bd299dbfc2f3.JPG)
+
  
  
  
