@@ -232,6 +232,31 @@ These are now the final clusters
  
  **ANSWER** : "ALGO METHOD" is a method to select the correct number of K for clustering.
  
+### Algo method, technique is same as calculating the best fitted line in linear regeression, which is done by taking several **sum of squared errors (SSE)** and assuming that the best fitted line is the one that has least SSE.
+ 
+Similarly, in K-means algorithm, the algo method takes the distance of each data point in cluster-1 to its centroid C1 and distance the data points of cluster-2 to  ,  its centroid c2 , <br/>
+
+* all distances of cluster-1 are squared and then sumed up = S1<br/>
+* all distances of cluster-1 are squared and then sumed up = S2 <br/>
+ 
+SSE_1 = S1 + S2 
+
+After calculating first SSE we take 3 centroids then 4 then 4,5,6,7,8,9,10,11. keep taking untill all data points become a centroid its self so there is no SSE
+ 
+SS_2 = ...
+SS_3 = ... 
+.
+.
+.
+SS_11 = ..
+ 
+After getting the final SSE. we plot a graph of SSE<br/>
+In that graph we find **Elbow Point** in our graph, similar to elbow point of best fiited line in regression analysis.<br/>
+The point where we see our Elbow is our choozen **K**
+ 
+ 
+ 
+ 
  
  
  
