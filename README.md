@@ -184,7 +184,7 @@ The next figure will give you an idea of how MI values correspond to the kind an
 
 ## 5_ K-Means Clustering
  
-Unsupervised algorithms don't make use of a target, instead their purpose is to learn some property of the data, and in order to understand the underline structure of our data set, we divide data into clusters to make predictions out of it.<br/>
+Unsupervised algorithms don't make use of a target, instead their purpose is to learn some property of the data, and in order to understand the underline structure of After dividing our dataset in two clustersour data set, we divide data into clusters to make predictions out of it.<br/>
 Clustering simply means the assigning of data points to groups based upon how similar the points are to each other 
  
  
@@ -206,6 +206,10 @@ then calculate and compare the distance of each data point to both centroids usi
 ![b](https://user-images.githubusercontent.com/33677647/201708780-aed3706e-a9cb-4c56-b2c3-a53268d65ff4.JPG) <br/><br/>
  <br/>
 After dividing our dataset in two clusters, the center of each cluster is calculated, and then the centroids are placed on those centers.
+
+**ALERT!!!**<br/>
+If features of your data do not have same scales, model will to find the center of a cluster correct,<br/>
+so if the data features have different scales, please scale them before putting data to the model
  
 ![a](https://user-images.githubusercontent.com/33677647/201710363-c9acc86f-7ad6-4864-9773-a42d650637be.JPG)
 ![b](https://user-images.githubusercontent.com/33677647/201710384-290c94f3-fd62-4905-a655-fd5c12a575e4.JPG)
