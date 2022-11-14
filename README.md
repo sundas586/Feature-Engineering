@@ -200,9 +200,43 @@ So we we tell our model to set k = 2 , it will put 2 centroids randomly any wher
 
 then calculate and compare the distance of each data point to both centroids using euclidean distance formula, then all data points are clustered to any one of the centroids which is more close to them. 
 
-![b](https://user-images.githubusercontent.com/33677647/201708780-aed3706e-a9cb-4c56-b2c3-a53268d65ff4.JPG)
+![b](https://user-images.githubusercontent.com/33677647/201708780-aed3706e-a9cb-4c56-b2c3-a53268d65ff4.JPG) <br/><br/>
+ <br/>
+After dividing our dataset in two clusters, the center of each cluster is calculated, and then the centroids are placed on those centers.
+ 
+![a](https://user-images.githubusercontent.com/33677647/201710363-c9acc86f-7ad6-4864-9773-a42d650637be.JPG)
+![b](https://user-images.githubusercontent.com/33677647/201710384-290c94f3-fd62-4905-a655-fd5c12a575e4.JPG)
 
-After dividing our dataset in two clusters, the center of each cluster is calculated
+ After placing the centroids in the center of each cluster, <br/>
+ We **recompute** the distance of each data point to 2 centroids,<br/>
+ repeat the process place the centroid again to the center of its nearest datapoints.<br/>
+ 
+ ![a](https://user-images.githubusercontent.com/33677647/201712483-6e701b48-38cd-4a4e-8638-72f8368b35a3.JPG)
+ 
+ The datapoints more near to red are now the partof red cluster.
+ 
+![a](https://user-images.githubusercontent.com/33677647/201714112-9ac539c6-f1ec-4a34-8a4b-748a74d28db5.JPG)
+![a](https://user-images.githubusercontent.com/33677647/201714702-605f627e-f2c9-46ba-949f-d161416d6e1d.JPG)
+
+Keep repeating the process of calculating the center for centroids and then the distance of each data point to new position of centroids untill none of the point changethe cluster.
+ 
+![a](https://user-images.githubusercontent.com/33677647/201715041-4e137d19-4487-4749-ad99-482049e76699.JPG)
+ 
+These are now the final clusters
+ 
+![b](https://user-images.githubusercontent.com/33677647/201715079-c2e24c8d-e032-4230-8480-403777df3857.JPG
+ 
+![a](https://user-images.githubusercontent.com/33677647/201715634-89c1e948-4f5b-4240-9c66-1b8bd73deff1.JPG)
+
+Now the problem is that how to select the correct k, because in real life there are many features, and its difficult to visualize them on a scatter plot 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
 
 
 
