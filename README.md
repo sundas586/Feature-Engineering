@@ -182,6 +182,28 @@ The next figure will give you an idea of how MI values correspond to the kind an
 ![a](https://user-images.githubusercontent.com/33677647/201547514-5535a16f-4ef0-48fd-a8dc-f5a2ed4efef1.JPG)
 ![b](https://user-images.githubusercontent.com/33677647/201547516-015fee08-92d0-4705-8925-139d740953b5.JPG)
 
+## 5_ K-Means Clustering
+
+In un-supervised machine learning, we do not have target variable, and in order to understand the underline structure of our data set, we divide data into clusters to make predictions out of it.
+
+![a](https://user-images.githubusercontent.com/33677647/201707914-a00f13a0-7cdd-445c-8563-e5b6ed13e04a.JPG)
+
+as we donot have any target variable here, so in order to identify our data set we divide it into **"K"** clusters,
+Here k is a free parameter, means we can initialize k by our selves.
+Here k = 2
+
+![b](https://user-images.githubusercontent.com/33677647/201707922-e437ef3c-e95a-449e-9ee6-d3ae796e32c7.JPG)
+
+So we we tell our model to set k = 2 , it will put 2 centroids randomly any where on our data set and
+
+![aa](https://user-images.githubusercontent.com/33677647/201709062-a4abf3b3-1279-4f07-a851-8e9a999c1486.JPG)
+
+then calculate and compare the distance of each data point to both centroids using euclidean distance formula, then all data points are clustered to any one of the centroids which is more close to them. 
+
+![b](https://user-images.githubusercontent.com/33677647/201708780-aed3706e-a9cb-4c56-b2c3-a53268d65ff4.JPG)
+
+After dividing our dataset in two clusters, the center of each cluster is calculated
+
 
 
 
