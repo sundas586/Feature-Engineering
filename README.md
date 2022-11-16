@@ -269,14 +269,35 @@ You could imagine each centroid capturing points through a sequence of radiating
 
 ![tBkCqXJ](https://user-images.githubusercontent.com/33677647/201751403-4e7f3f70-76d1-44fd-9e00-40da1bb4a289.gif)
  
+## 6_Principle component analysis
 
+Principal component analysis (PCA). Just like clustering is a partitioning of the dataset based on proximity,Pca focuses on variables with high variation/spread to get more and more information about data you could think of PCA as a partitioning of the variation in the data. <br/>
+PCA is a great tool to help you discover important relationships in the data and can also be used to create more informative features.
  
+(Technical note: PCA is typically applied to standardized data.<br/>
+- With standardized data "variation" means **"correlation"**.<br/>
+- With unstandardized data "variation" means **"covariance"**.<br/>
+All data in this course will be standardized before applying PCA.)<br/>
  
+![a](https://user-images.githubusercontent.com/33677647/202102672-70e4c536-94ed-47fd-a088-68339724324e.JPG)
+
+You could imagine that within this data are "axes of variation" that describe the ways the abalone tend to differ from one another.
  
+ ![b](https://user-images.githubusercontent.com/33677647/202103429-41546913-4aaf-4c0e-83dd-49cf8c25a065.JPG)
  
- 
- 
- 
+ Notice that instead of describing abalones by their 'Height' and 'Diameter', we could just as well describe them by their 'Size' and 'Shape'. This, in fact, is the whole idea of PCA: instead of describing the data with the original features, we describe it with its axes of variation. The axes of variation become the new features.
+
+![c](https://user-images.githubusercontent.com/33677647/202103870-32497fcc-bdd1-45aa-a196-22d766988b9b.JPG)
+
+The new features PCA constructs are actually just linear combinations (weighted sums) of the original features:
+
+![d](https://user-images.githubusercontent.com/33677647/202104347-afa9e7da-10ac-4c5b-ade6-c123433245e4.JPG)
+
+These new features are called the principal components of the data. The weights themselves are called loadings. There will be as many principal components as there are features in the original dataset: if we had used ten features instead of two, we would have ended up with ten components.
+
+A component's loadings tell us what variation it expresses through signs and magnitudes:
+
+![e](https://user-images.githubusercontent.com/33677647/202104376-5b625bc7-13e4-4ab9-8b7a-bc1b601e0049.JPG)
 
 
 
