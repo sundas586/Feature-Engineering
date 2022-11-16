@@ -145,6 +145,8 @@ Normalization means the area of plot equals 1, but scaling just to get all the c
 
 [MI_Kaggle](https://www.kaggle.com/code/ryanholbrook/mutual-information)
 [MI_Towards_DataScience](https://towardsdatascience.com/select-features-for-machine-learning-model-with-mutual-information-534fe387d5c8)
+ 
+MI can also be used for the purpose of PCA (compute the MI scores for the components and see what kind of variation is most predictive of your target. That could give you ideas for kinds of features to create -- a product of 'Height' and 'Diameter' if 'Size' is important, say, or a ratio of 'Height' and 'Diameter' if Shape is important. You could even try clustering on one or more of the high-scoring components.) 
 
 **What is mutual information (MI) in feature selection?**
 Between two random variables, one taken from any feature and one taken from target feature, there is a non-negative value, which measures the dependency between the variables. It is equal to zero if and only if two random variables are totally independent of each other, and higher values mean higher dependency.
@@ -299,9 +301,18 @@ A component's loadings tell us what variation it expresses through signs and mag
 
 ![e](https://user-images.githubusercontent.com/33677647/202104376-5b625bc7-13e4-4ab9-8b7a-bc1b601e0049.JPG)
 
+**This table of loadings is telling us that in the "Size component", Height and Diameter vary in the same direction (same sign), but in the Shape component they vary in opposite directions (opposite sign). In each component, the loadings are all of the same magnitude and so the features contribute equally in both.**
 
+**PCA also tells us the amount of variation in each component. We can see from the figures that there is more variation in the data along the Size component than along the Shape component. PCA makes this precise through each component's percent of explained variance.**
 
+![k](https://user-images.githubusercontent.com/33677647/202144414-dfbe4162-ad44-4c94-84c7-4bc877431c21.JPG)
+ 
+ Two ways to perform PCA :
+ 
+ 1_ by MI or clustering
+ 2_ by creating component as features
 
+ ![d](https://user-images.githubusercontent.com/33677647/202147706-8e4a6fbe-86dc-4e8b-b825-4377424037be.JPG)
 
 
 
